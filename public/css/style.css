@@ -1,0 +1,8 @@
+.tableau {
+  border-collapse: collapse;
+}
+.tableau td,
+.tableau th {
+  border: 1px dotted #aaa;
+  padding: 5px;
+}
