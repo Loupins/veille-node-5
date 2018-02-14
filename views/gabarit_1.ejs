@@ -6,32 +6,31 @@
  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+	<h1>Ajouter un contact</h1>
 	<form action="http://127.0.0.1:8081/ajouter" method="POST">
- <input type="text" placeholder="nom" name="nom">
- <input type="text" placeholder="telephone" name="telephone">
- <button type="submit">Submit</button>
-</form>
- <table class="tableau">
- <% 
- let noLigne = 0;
- for(elm of adresses) {%>
- <% if(noLigne == 0){%>
- <tr>
- 	<% 
- 	noLigne++
- 	for(p in elm) {%>
- 		<th><%= p %></th>
- 	 <% } %>
- </tr>
- <% } %>
- <tr>
- 	<% for(p in elm) {%>
- 		<td><%= elm[p] %></td>
- 	 <% } %>
- </tr>
- <% } %>
- </table>
-
+		<input type="text" placeholder="nom" name="nom">
+		<input type="text" placeholder="telephone" name="telephone">
+		<button type="submit">Submit</button>
+	</form>
+	<table class="tableau">
+		<% 
+		let noLigne = 0;
+		for(elm of adresses) {%>
+		<% if(noLigne == 0){%>
+		<tr>
+		<% 
+		noLigne++
+		for(p in elm) {%>
+			<th><%= p %></th>
+		 <% } %>
+		</tr>
+		<% } %>
+		<tr>
+		<% for(p in elm) {%>
+			<td><%= elm[p] %></td>
+		 <% } %>
+		</tr>
+		<% } %>
+	</table>
 </body>
 </html>
