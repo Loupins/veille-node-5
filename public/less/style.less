@@ -1,37 +1,44 @@
 body {
 	text-align: center;
 	font-family: arial;
-}
-
-label {
-	display:inline-block;
-}
-
-.tableau {
-	margin: 0 auto;
-	margin-top: 15px;
-	border-collapse: collapse;
-	td,th {
-		border: 1px solid #aaa;
-		padding: 5px;
-	}
-	tr {
-		&:hover {
-			background: lightgray;
+	form {
+		label {
+			display:inline-block;
+			input {
+				border-radius: 3px;
+				border: 1px solid black;
+				height: 21px;
+			}
+		}
+		button {
+			border: 1px solid black;
+			border-radius: 3px;
+			padding: 4px;
 			cursor: pointer;
+			&:hover {
+				background: white;
+			}
 		}
 	}
-	th {
-		background: lightblue;
+
+	.tableau {
+		margin: 0 auto;
+		margin-top: 15px;
+		border-collapse: collapse;
+		td,th {
+			border: 1px solid #aaa;
+			padding: 5px;
+		}
+		tr {
+			&:hover {
+				background: lightgray;
+				cursor: pointer;
+			}
+		}
+		th {
+			background: lightblue;
+		}
 	}
 }
 
-button {
-	border: 1px solid black;
-	border-radius: 3px;
-	padding: 4px;
-	cursor: pointer;
-	&:hover {
-		background: white;
-	}
-}
+
